@@ -31,6 +31,9 @@ let php_baselib = 1
 :imap jj <Esc>
 
 " map <F2> to print_r
-:nmap <F2> iecho '<pre>'; print_r(); echo '</pre>';<Esc>
+:nmap <F2> iecho '<pre>'; print_r(); echo '</pre>';<Esc>bbba
+
+" t - wrap T_('') around selected text
+:vmap t "zdiT_('<C-R>z')<Esc>
 
 au BufNewFile,BufRead *.less set filetype=less
