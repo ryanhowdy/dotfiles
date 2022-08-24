@@ -42,6 +42,9 @@ alias whatchmod='stat -c %a'
 alias fixdirectories='find ./ -type d -exec chmod 755 {} \;'
 alias fixfiles='find ./ -type f -exec chmod 644 {} \;'
 
+# search through history
+alias gh='history|grep'
+
 export TERM='xterm-256color'
 export LANG='en_US.UTF-8'
 export EDITOR="vim"
