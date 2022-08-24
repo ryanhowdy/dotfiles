@@ -1,24 +1,57 @@
 " F12 un highlights search
 nnoremap <F12> :nohl<CR>
-" F9 to fix syntax highlighting
+
+" F9 fixes syntax highlighting
 nnoremap <F9> :syntax sync fromstart<CR>
 
+" turn on syntax highlighting
 syntax enable
-set showmatch
+syntax on
+
+" Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
+
+" use spaces instead of tabs
+set expandtab
+let &expandtab=1
+
+" do not wrap lines
+set nowrap
+
+" turn on line numbers
+set number
+
+" us highlighting during search
+set hlsearch
+
+" show matching words during search
+set showmatch
+
+" ignore case during searching
+set ignorecase
+
+" if you searched for capital letters, override ignore case and use case sensitive
+set smartcase
+
+set incsearch
+set noscrollbind
+set ruler
+set t_Co=256
 set bs=2
 set tabstop=4
 set shiftwidth=4
 let &ai=0
-let &expandtab=1
-set nowrap
-set hlsearch
-set incsearch
-set noscrollbind
-set ruler
-set number
-set t_Co=256
+
 colorscheme ryan
+
+" Enable type file detection. Vim will be able to try to detect the type of file in use.
+filetype on
+
+" Enable plugins and load plugin for the detected file type.
+filetype plugin on
+
+" Load an indent file for the detected file type.
+filetype indent on
 
 set fileformat=unix
 
@@ -30,10 +63,6 @@ let php_baselib = 1
 " map jj to esc
 :imap jj <Esc>
 
-" map <F2> to print_r
-:nmap <F2> iecho '<pre>'; print_r(); echo '</pre>';<Esc>bbba
-
-" t - wrap T_('') around selected text
-:vmap t "zdiT_('<C-R>z')<Esc>
-
-au BufNewFile,BufRead *.less set filetype=less
+" php autocomplete
+"autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+set ofu=syntaxcomplete#Complete
