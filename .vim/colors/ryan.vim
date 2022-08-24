@@ -1,4 +1,4 @@
-" Ryan colour scheme
+" Ryan vim color scheme
 
 " 46  - neon green
 " 67  - purple/blue
@@ -38,7 +38,7 @@ hi NonText                  ctermfg=252
 "hi Directory                ctermfg=227
 hi Title                    ctermfg=46
 
-" -> Cursor 
+" -> Cursor
 "hi Cursor                   ctermbg=227     ctermfg=234     cterm=none
 "hi CursorIM                 ctermbg=227     ctermfg=234     cterm=none
 hi CursorColumn             ctermbg=46                      cterm=none
@@ -48,42 +48,42 @@ hi CursorLine               ctermfg=none    ctermbg=236     cterm=none
 "hi FoldColumn               ctermbg=234     ctermfg=25      cterm=none
 "hi Folded                   ctermbg=234     ctermfg=25      cterm=none
 
-" -> Line info  
+" -> Line info
 hi LineNr                   ctermfg=238
 hi StatusLine               ctermfg=241     ctermbg=0       cterm=none
 hi StatusLineNC             ctermfg=241     ctermbg=237     cterm=none
-                                                            
-" -> Messages                                               
+
+" -> Messages
 hi ErrorMsg                 ctermfg=84      ctermbg=none    cterm=none
 hi Question                 ctermfg=84      ctermbg=none    cterm=none
 hi WarningMsg               ctermfg=84      ctermbg=none    cterm=none
 hi MoreMsg                  ctermfg=84      ctermbg=none    cterm=none
 hi ModeMsg                  ctermfg=84      ctermbg=none    cterm=none
-                                                           
-" -> Search                                                 
-hi Search                   ctermfg=none    ctermbg=0       cterm=none 
+
+" -> Search
+hi Search                   ctermfg=none    ctermbg=0       cterm=none
 hi IncSearch                ctermfg=none    ctermbg=0       cterm=none
-                                                            
-" -> Diff                                                   
+
+" -> Diff
 hi DiffAdd                  ctermfg=208     ctermbg=22      cterm=none
 hi DiffChange               ctermfg=130     ctermbg=235     cterm=none
 hi DiffDelete               ctermfg=208     ctermbg=234     cterm=none
 hi DiffText                 ctermfg=208     ctermbg=24      cterm=underline
-                                                            
-" -> Menu                                                   
+
+" -> Menu
 "hi Pmenu                    ctermfg=52      ctermbg=0       cterm=none
 "hi PmenuSel                 ctermfg=52      ctermbg=208     cterm=none
 "hi PmenuSbar                                ctermbg=52      cterm=none
 "hi PmenuThumb                               ctermbg=52      cterm=none
 "hi PmenuSel                 ctermfg=52      ctermbg=208     cterm=none
-                                                            
-" -> Tabs                                                   
+
+" -> Tabs
 hi TabLine                  ctermfg=244     ctermbg=232     cterm=none
 hi TabLineFill                              ctermbg=0       cterm=none
-hi TabLineSel               ctermfg=255     ctermbg=234     cterm=bold 
-"                                                           
-" -> Visual Mode                                            
-hi Visual                   ctermfg=215     ctermbg=0       cterm=none 
+hi TabLineSel               ctermfg=255     ctermbg=234     cterm=bold
+"
+" -> Visual Mode
+hi Visual                   ctermfg=215     ctermbg=0       cterm=none
 hi VisualNOS                ctermfg=241     ctermbg=0       cterm=none
 
 " -> Code
